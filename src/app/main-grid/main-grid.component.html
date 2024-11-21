@@ -1,0 +1,7 @@
+<div class="grid-container">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile *ngFor="let dog of dogs">
+      <app-detail-card [dog]="dog" (like)="onDogLiked($event)"></app-detail-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

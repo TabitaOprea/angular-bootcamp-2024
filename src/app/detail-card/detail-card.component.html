@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ dog.name }}</mat-card-title>
+    <mat-card-subtitle>{{ dog.size }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="dog.image" alt="{{ dog.name }}">
+  <mat-card-content>
+    <p>{{ dog.description }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="onLike()">LIKE</button>
+  </mat-card-actions>
+</mat-card>
